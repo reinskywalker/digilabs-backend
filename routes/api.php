@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\QABootcamp;
+use App\Http\Controllers\QABootcampController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +19,4 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/qa_bootcamp', [QABootcamp::class, 'store']);
+Route::post('/qa_bootcamps', [QABootcampController::class, 'store']);

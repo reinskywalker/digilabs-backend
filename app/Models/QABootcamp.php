@@ -10,9 +10,9 @@ class QABootcamp extends Model
 {
     use HasFactory;
 
-    protected $table = 'qa_bootcamp';
-    protected $keyType = 'string'; 
-    public $incrementing = false;
+    protected $table = 'qa_bootcamps'; 
+    protected $keyType = 'string';
+    public $incrementing = false; 
 
     protected $fillable = [
         'id',

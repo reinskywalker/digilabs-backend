@@ -14,7 +14,7 @@ class CreateQABootcampsTable extends Migration
     public function up()
     {
         Schema::create('qa_bootcamps', function (Blueprint $table) {
-            $table->uuid('id')->primary(); // UUID for ID
+            $table->uuid('id')->primary();
             $table->string('name', 100);
             $table->string('province', 100);
             $table->string('regency', 100);
