@@ -20,9 +20,9 @@ Route::get('/', function () {
 });
 Route::middleware(["auth", 'role:superadmin'])->group(function () {
     Route::apiResource('users', UserController::class)->middleware('role: superadmin');
-
     Route::get('autocomplete/{type}', [AutoCompleteController::class, 'autocomplete']);
     Route::post('autocomplete/{type}', [AutoCompleteController::class, 'autocomplete']);
 });
+
 
 require __DIR__ . '/auth.php';
