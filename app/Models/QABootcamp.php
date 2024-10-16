@@ -17,12 +17,15 @@ class QABootcamp extends Model
     protected $fillable = [
         'id',
         'name',
+        'email',
+        'phone_number',
+        'has_whatsapp',
+        'experience',
+        'expectation',
         'province',
         'regency',
         'district',
         'village',
-        'experience',
-        'expectation',
     ];
 
     protected static function boot()
